@@ -27,7 +27,6 @@ const controlRecipes = async function () {
 
     // 1) Loading recipe
     await model.loadRecipe(id);
-    console.log(model.state.recipe);
 
     // 2 Rendering Recipe
     recipeView.render(model.state.recipe);
