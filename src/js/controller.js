@@ -86,6 +86,7 @@ controlAddBookmark = function () {
 const controlBookmarks = function () {
   bookmarksView.render(model.state.bookmarks);
 };
+const newFeature = () => console.log('welcome');
 
 const controlAddRecipe = async function (newRecipe) {
   try {
@@ -123,5 +124,6 @@ const init = function () {
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
+  newFeature();
 };
 init();
